@@ -7,8 +7,8 @@ public class UIShop : UICanvas
 {
     [SerializeField] Button btnBack;
 
-    [SerializeField] SkinPanel skinPanelPrefab;
-    [SerializeField] Transform skinPanelParent;
+    [SerializeField] SkinItem skinItemPrefab;
+    [SerializeField] Transform skinItemParent;
 
     private void Awake()
     {
@@ -16,7 +16,12 @@ public class UIShop : UICanvas
         {
             CloseDirectly();
             UIManager.Ins.OpenUI<UIMainmenu>();
-        });
+        });        
+    }
+
+    public override void Open()
+    {
+        base.Open();
 
         List<Skin> skinList = DataManager.Ins.GetSkinList();
 
@@ -24,8 +29,8 @@ public class UIShop : UICanvas
         {
             for (int i = 0; i < skinList.Count; i++)
             {
-                SkinPanel skinPanel = Instantiate(skinPanelPrefab, skinPanelParent);
-                skinPanel.InitSkinPanel(skinList[i]);
+                SkinItem skinItem = Instantiate(skinItemPrefab, skinItemParent);
+                skinItem.InitSkinItem(skinList[i]);
             }
         }
     }

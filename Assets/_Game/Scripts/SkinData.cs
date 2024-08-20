@@ -29,6 +29,6 @@ public class Skin
     public GameColor color;
     public SkinUnlockType unlockType;
     public int price;
-    public Texture2D skinImage;
+    public Sprite skinImageSprite;
 
 }

@@ -4,14 +4,14 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SkinPanel : MonoBehaviour
+public class SkinItem : MonoBehaviour
 {
     [SerializeField] Skin skin;
 
     [SerializeField] Button btnBuy, btnEquip;
     [SerializeField] TextMeshProUGUI textBuy;
     [SerializeField] Image skinImage;
-    public void InitSkinPanel(Skin skin)
+    public void InitSkinItem(Skin skin)
     {
         this.skin = skin;
 
@@ -25,6 +25,6 @@ public class SkinPanel : MonoBehaviour
         });
 
         textBuy.text = this.skin.price.ToString();
-        //skinImage = this.skin.skinImage;
+        skinImage.sprite = this.skin.skinImageSprite;
     }
 }

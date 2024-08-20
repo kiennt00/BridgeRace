@@ -360,7 +360,7 @@ GameObject:
   - component: {fileID: 68264633231937735}
   - component: {fileID: 86546713654896514}
   m_Layer: 5
-  m_Name: SkinPanel
+  m_Name: SkinItem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -444,7 +444,7 @@ MonoBehaviour:
     color: 0
     unlockType: 0
     price: 0
-    skinImage: {fileID: 0}
+    skinImageSprite: {fileID: 0}
   btnBuy: {fileID: 3575654975465811799}
   btnEquip: {fileID: 1065394966166652744}
   textBuy: {fileID: 580976176000735203}

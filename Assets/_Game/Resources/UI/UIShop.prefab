@@ -815,8 +815,8 @@ MonoBehaviour:
   animator: {fileID: 0}
   IsDestroyOnClose: 0
   btnBack: {fileID: 6902788863844948731}
-  skinPanelPrefab: {fileID: 86546713654896514, guid: dcd8ad37c0195d04499cfc0655ba5ff8, type: 3}
-  skinPanelParent: {fileID: 156549869444936520}
+  skinItemPrefab: {fileID: 86546713654896514, guid: dcd8ad37c0195d04499cfc0655ba5ff8, type: 3}
+  skinItemParent: {fileID: 156549869444936520}
 --- !u!1 &6907571660803210982
 GameObject:
   m_ObjectHideFlags: 0
