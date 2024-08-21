@@ -8,7 +8,7 @@ public class Character : MonoBehaviour
     protected Vector3 nextPoint;
     [SerializeField] protected float moveSpeed = 5f;
 
-    [SerializeField] protected Transform tf;
+    public Transform tf;
 
     [SerializeField] protected Animator anim;
     protected string currentAnimName;

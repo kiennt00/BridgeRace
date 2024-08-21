@@ -56,12 +56,6 @@ public class Enemy : Character
         agent.SetDestination(destination);
     }
 
-    public void ResetPath()
-    {
-        agent.ResetPath();
-        agent.velocity = Vector3.zero;
-    }
-
     protected override void NextFloor(Gate gate)
     {
         base.NextFloor(gate);

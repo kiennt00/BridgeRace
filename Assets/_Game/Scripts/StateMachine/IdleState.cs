@@ -10,7 +10,7 @@ public class IdleState : IState<Enemy>
     public void OnEnter(Enemy enemy)
     {
         enemy.ChangeAnim("idle");
-        enemy.ResetPath();
+        enemy.SetDestination(enemy.tf.position);
         enemy.targetPos.Clear();
         timer = 0;
         randomTime = Random.Range(1f, 3f);

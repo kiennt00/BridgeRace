@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0c948ff48d5efb4f80a24f6385b2555, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
+  moveSpeed: 5
   tf: {fileID: 3894941700142282147}
   anim: {fileID: 3894941700245515157}
   brickParent: {fileID: 3894941701215116184}
